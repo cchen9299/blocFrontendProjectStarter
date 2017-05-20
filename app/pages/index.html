@@ -3,9 +3,65 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/app/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
+    
+
 <body>
-    <script src="/scripts/app.js"></script>
+  <nav class="navBar">
+        <a href="index.html" class="logo"><img src="/app/assets/images/logoWT.png"></a>
+        <ul class="links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="signIn.html" class="signIn">SignIn</a>
+  </nav>
+    
+    
+  <section class="hero">
+    <img class="mySlides " src="/app/assets/images/carasol1-1.jpg">
+    <img class="mySlides " src="/app/assets/images/carasol2.jpg">
+      <img class="mySlides " src="/app/assets/images/carasol3.jpg">
+      
+    <button class="carasolButton carasolButtonLeft whiteHover" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="carasolButton carasolButtonRight whiteHover" onclick="plusDivs(+1)">&#10095;</button>
+
+    <h1 class="heroTitle">Prints on Prints</h1>
+    <h3 class="heroSub">Hand prints by traditional printing press roller and screen printing</h3>
+    <a href="browse.html" class="button">Shop Now</a>
+    
+    <div class="dots">
+        <span class="carasolDot demo whiteHover" onclick="currentDiv(1)"></span>
+        <span class="carasolDot demo whiteHover" onclick="currentDiv(2)"></span>
+        <span class="carasolDot demo whiteHover" onclick="currentDiv(3)"></span>
+    </div>
+  </section>
+
+  <section class="sellingPoints">
+    <h3>For Shoppers</h3>
+    <h5>Pick a design</h5>
+      <p>Find a desgin that you love in our collection from designers across the world.</p>
+    <h5>Choose a media</h5>
+      <p>Great quality prints on any of our provided media. T-shirts, hoodies, paper and even make them into stickers!</p>
+    <h5>Select a size</h5>
+      <p>Whether it's a XXXXXL t-shirt to be hung like a rug or a 8"x8" piece to be framed, we got you.</p>
+    <h3>For Designers</h3>
+      <p>Upload your graphic design and once we have accepted your design, you take a share everytime your design is sold!</p>
+
+  <section class="subscribe">
+    <div class="typeBar"></div>
+    <div class="buton"></div>
+    <h5>Subscribe to be the first to learn about new styles and promotions</h5>
+  </section>
+
+  <footer class="footer">
+    <h5>BlocShop C 2016</h5>
+    <div class="links"></div>
+
+
+
+  <script src="/app/scripts/app.js"></script>
 </body>
 </html>

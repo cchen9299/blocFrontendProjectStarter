@@ -1,0 +1,170 @@
+h1{
+    font-family:"Varela Round", sans-serif;
+    margin:0;
+    padding:0;
+    font-size: 5em;
+    font-stretch:extra-expanded;
+        
+    font-weight:300;
+}
+
+h3{
+    font-size:2em;
+    letter-spacing: 3px;
+}
+h3, h5, p{
+    font-family:"lato", sans-serif;
+    font-weight:300;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-family:"lato", sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.button{
+    font-size:2em;
+    border: 2px white solid;
+    padding:5px 40px 7px 40px;
+}
+.carasolButtonLeft{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+}
+.carasolButtonRight{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+}
+.carasolButton{
+    border:none;
+    padding:8px 16px;
+    width:40px;
+    height:40px;
+    background-color:rgba(0,0,0,.5);
+    color:white;
+}
+{
+    background-color:rgba(255,255,255,.5);
+}
+
+
+
+@keyframes slideLeft{
+    from{right:0}
+    to{right:100%;opacity:0}
+}
+
+
+.navBar{
+    background-color:rgba(0,0,0,.6);
+    position:fixed;
+    width:100%;
+    height:3.5em;
+    position:fixed;
+}
+
+.logo{
+    float:left;
+    
+}
+.logo img{
+    height:25px;
+    float:left;
+    padding:1em 0 0 10%;
+}
+
+.links{
+    text-align: center;
+    width:30%;
+    float:left;
+    padding: 0 0 0 23%;
+}
+
+.links > li{
+    text-align: center;
+    display:inline-block;
+    margin:0 5%;
+}
+.signIn{
+    float:right;
+    margin:1em 3em 0 0;
+}
+
+
+.footer{
+    background-color:black;
+    opacity:.6;
+    width:100%;
+}
+
+
+
+
+
+.hero{
+    padding:0;
+    margin:0;
+    min-height: 100%;
+    
+    text-align: center;
+    color:white;
+}
+
+.heroTitle{
+    letter-spacing: 10px;
+    padding:20% 0 0 0;
+    margin:0;
+}
+
+.hero h1,.hero h3,.hero a{
+    vertical-align: center;
+    
+}
+
+/*
+.hero h3{
+    background-color:rgba(0,0,0,.7);
+    width:80%;
+    margin:0 auto 3% auto;
+    padding:1em 0;
+}*/
+
+
+.mySlides{
+    min-width:100%;
+    position:absolute;
+    z-index: -1;
+    align-content: center;
+}
+.dots{
+    padding: 8% 0 0% 0;
+}
+.carasolDot{
+    height:15px;
+    width:15px;
+    margin:0 10px;
+    display:inline-block;
+    border-radius:50%;
+    background-color:rgba(0,0,0,.7)
+}
+
+
+.whiteDot,.whiteHover:hover{
+    background-color:rgba(255,255,255,.7);
+    color:black;
+    cursor:pointer;
+}
+
+
+
+
