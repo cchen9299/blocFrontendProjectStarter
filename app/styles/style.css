@@ -28,6 +28,7 @@ a{
 body{
     margin:0;
     padding:0;
+    background-color:rgba(0,0,0,.05)
 }
 .button{
     font-size:2em;
@@ -35,8 +36,8 @@ body{
     padding:5px 40px 7px 40px;
 }
 .half-column{
-    width:45%;
-    margin: 5% 2% 0 3%;
+    width:42%;
+    margin: 5% 2% 0 5%;
     float:left;
 }
 
@@ -93,6 +94,7 @@ body{
     position:relative;
     height: 900px;  
     text-align:center;
+    overflow:hidden
     
 }
 
@@ -106,7 +108,7 @@ body{
 }
 
 .mySlides{
-    min-width:100%;
+    min-width: 100%;
     min-height:100%;
     position:absolute;
     z-index: -1;
@@ -154,6 +156,8 @@ body{
     color:white;
 }
 
+/*---------- Selling Points ----------*/
+
 
 .sellingPoints{
     position:relative;
@@ -163,16 +167,39 @@ body{
 .sellingPoints h3{
     font-family:"Varela Round", sans-serif;
 }
-.sellingPoints div{
-}
 .sellingPoints div h5{
-    margin:7% 0 0 0;
-    padding:0;
+    padding:0 0 0 25%;;
 }
+
+.sellingPoints h5, .sellingPoints p{
+    width:75%;
+    padding:0 0 0 25%;
+}
+
 .designer{
     padding:;
     margin: 20% 20% 0 0;
 }
+
+.sellingPoints span{
+    font-size:3em;
+    float:left;
+    padding:30px 0 0 3%;
+}
+
+.sellingPoints .right{
+    font-size:3em;
+    margin:10% 0 0;
+}
+
+.sellingPoints .rightP{
+    margin:15% 0 0;
+    position:relative;
+    padding: 40px  0 0 100px;
+    
+}
+
+/*---------- Subscribe ----------*/
 
 .subscribe{
     clear:all;
@@ -186,8 +213,21 @@ body{
 .subscribe h5{
     padding:100px 0 0;
 }
-input[type=text]{
-    
+.subscribe input{
+    height:30px;
+    margin:0;
+    font-size: 18px;
+    padding:4px 0 0;
+    border:none;
+    border-bottom: 2px solid white;
+    background-color:rgba(0,0,0,0);
+    width:30%;
+    margin: 0 5% 0 0;
+    color:white;
+}
+.subscribe .button{
+    font-size:20px;
+    margin:0;
 }
 
 footer{
@@ -200,6 +240,17 @@ footer{
 }
 footer h5{
     color:white;
+    font-size: 18px;
     margin:0;
-    padding:0;
+}
+.footer-links li{
+    display:inline-block;
+    text-decoration:none;
+    margin: 0 5%;
+    text-align: center;
+}
+.footer-links{
+    text-align: center;
+    margin: 0 0;
+    padding: 1.2em 0 0;
 }
