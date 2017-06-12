@@ -1,0 +1,34 @@
+/*---------- Nav Bar -----------*/
+
+.navBar{
+    position:fixed;
+    
+    
+}
+
+.logo{
+    float:left;
+    
+}
+.logo img{
+    height:25px;
+    float:left;
+    padding:1em 0 0 10%;
+}
+
+.links{
+    text-align: center;
+    width:30%;
+    float:left;
+    padding: 0 0 0 23%;
+}
+
+.links > li{
+    text-align: center;
+    display:inline-block;
+    margin:0 5%;
+}
+.signIn{
+    float:right;
+    margin:1em 3em 0 0;
+}

@@ -1,0 +1,60 @@
+
+/*---------- Nav Bar -----------*/
+
+.navBar {
+    text-align: center;
+    margin:0;
+    padding:0;
+    height:4em;
+}
+
+nav logo{
+}
+
+nav .logo img{
+    height:3em;
+    position:relative;
+    left:20px;
+    top:8px
+    
+    
+}
+
+nav span{
+    font-size: 40px;
+    color:white;
+}
+
+nav span:hover{
+    cursor:pointer;
+    color:black;
+    transform:1s
+}
+
+nav .ion-navicon{
+    float:left;
+    margin:10px 20px;
+    
+}
+
+nav .ion-ios-cart{
+    float:right;
+    margin:10px 30px;
+}
+
+nav .signIn{
+    float:right;
+    margin:1.5em 30px;
+}
+
+/*------------ Side Bar -----------*/
+.sideBar{
+    height:100px;
+    width:
+}
+
+
+footer{
+    position:absolute;
+    top:100%;
+}
