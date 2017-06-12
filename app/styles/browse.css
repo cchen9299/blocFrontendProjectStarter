@@ -46,15 +46,146 @@ nav .signIn{
     float:right;
     margin:1.5em 30px;
 }
+nav .signIn:hover{
+    color: rgba(0,0,0,.8)
+}
 
 /*------------ Side Bar -----------*/
 .sideBar{
-    height:100px;
-    width:
+    background-color:white;
+    width:200px;
+    position:absolute;
+    -webkit-transition: left 1s;
+    transition: left 1s;
+    left:-200px;
+}
+.sideBar a{
+    color:black;
+}
+.sideBar li{
+    list-style: none;
+    padding:10px 30px ;
+    position:relative;
+    -webkit-transition: background .25s;
+    transition: background .25s;
+}
+.sideBar li:hover{
+    right:10px;
+    background-color:rgba(0,0,0,.03);
+}
+
+.sideBar > ul{
+    padding:25px 0;
+    margin:0;
+}
+.sideBar ul ul{
+    text-align: right;
+    padding: 20px 0;
+}
+.sideBar h7{
+    font-weight:500;
+    padding:0 30px 10px;
+}
+
+/*---------------- Content ---------------*/
+.content{
+    padding: 30px 10% 0;
+}
+.contentNav{
+    margin:70px 0;
+    clear:left;
+}
+.content div ul li{
+    display: block;
+    float:left;
+    padding: 5px;
+    margin: 0 10px
+}
+.content div ul li:hover{
+    cursor:pointer;
+}
+.content div ul h7{
+    float:left;
+    margin: 5px 20px 0 0;
+    font-weight: 500;
+}
+.contentNav{
+    padding: 0 0 10px;
+}
+
+.design1{
+    background-image: url(/app/assets/designs/020712_KREBSone_t670.jpg);
+}
+.design2{
+    background-image: url(/app/assets/designs/03aed24e392d60c0ad4ef4a7807e39c1.jpg)
+}
+.design3{
+    background-image: url(/app/assets/designs/8fe3c43dbae9a7d18e2181961f7fc171.jpg)
+}
+.design4{
+    background-image: url(/app/assets/designs/a725201b9a731d1f4dc0098754eb2f95.jpg)
+}
+.designs{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:250px;
+    width:250px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #888888;
+    display:inline-table;
+    margin:20px 20px;
+}
+.designs div{
+    background-color: rgba(255,255,255,.9);
+    width:80%;
+    height:100%;
+    margin:0%;
+    padding:20% 10% 0;
+    opacity:0;
+    transition:all .25s;
+}
+.designs div:hover{
+    opacity:1;
+}
+.designs h7{
+    display:block;
+    text-align: center;
+    margin:10px 0;
+}
+.wishList{
+    margin: 65px 0 0;
+    padding: 0 0 5px
+}
+.wishList:hover{
+    color:white;
+    background-color: rgba(0,0,0,.2);
+    cursor:pointer;
+    border-radius: 5px;
+}
+.wishList span{
+    color:pink;
+    font-size:20px
+}
+designName{
+    font-style: italic;
+}
+.designButton{
+    font-size:1.5em;
+    font-weight:500;
+    padding:5px 5px;
+    margin:0 40px;
+    background-color: #f7a537;
+    color:white;
+    border-radius: 5px;
+}
+.designButton:hover{
+    cursor:pointer;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
 
 
 footer{
+    display:none;
     position:absolute;
     top:100%;
 }

@@ -25,29 +25,97 @@
     
     </nav>
     
-    <section class="content"></section>
-    
-    <section class="sideBar">
+    <section class="sideBar" id="sideBar">
         <ul>
-            <ul>
+            <ul><h7>STYLE</h7>
                 <li><a href="#">All Designs</a></li>
-                <li>Black and White</li>
-                <li>Colored</li>
-                <li>Minimal</li>
-                <li>Triangle</li>
-                <li>Square</li>
-                <li>Circle</li>
-                <li>Linear</li>
+                <li><a href="#">Black and White</a></li>
+                <li><a href="#">Colored</a></li>
+                <li><a href="#">Minimal</a></li>
+                <li><a href="#">Triangle</a></li>
+                <li><a href="#">Square</a></li>
+                <li><a href="#">Circle</a></li>
+                <li><a href="#">Linear</a></li>
             </ul>
             
             
-            <ul>
+            <ul><h7>ACCOUNT</h7>
             </ul>
         </ul>
     
     
     </section>
     
+    <section class="content">
+        <div class="contentNav">
+            <ul><h7>Sort</h7>
+                <li>Newest</li>
+                <li>Most Popular</li>
+                <li>Highest Price</li>
+                <li>Lowest Price</li>
+            </ul>
+        </div>
+        <div class="design1 designs">
+            <div>
+                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                <h7 class="designName">Square One</h7>
+                <h7 class="designer">Anonymous</h7>
+                <h6 class="designButton">VIEW</h6>
+            </div>
+        </div>
+        
+        <div class="design2 designs">
+            <div>
+                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                <h7 class="designName">Square One</h7>
+                <h7 class="designer">Anonymous</h7>
+                <h6 class="designButton">VIEW</h6>
+            </div>
+        </div>
+        
+        <div class="design3 designs">
+            <div>
+                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                <h7 class="designName">Square One</h7>
+                <h7 class="designer">Anonymous</h7>
+                <h6 class="designButton">VIEW</h6>
+            </div>
+        </div>
+        
+        <div class="design4 designs">
+            <div>
+                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                <h7 class="designName">Square One</h7>
+                <h7 class="designer">Anonymous</h7>
+                <h6 class="designButton">VIEW</h6>
+            </div>
+        </div>
+    
+    
+    </section>
+    
     <footer></footer>
+        
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script >
+        var sideBarToggle = 0;
+        var sideBarSlide = function(){
+            if(sideBarToggle === 0){
+                $('#sideBar').css('left','00px');
+                sideBarToggle = 1;
+            }
+            else{
+                $('#sideBar').css('left','-200px');
+                sideBarToggle = 0;
+            }
+        }
+        $(document).ready(function(){
+            $('.ion-navicon').click(sideBarSlide);
+        });
+        //$('#sideBar').css('display','none');
+        //document.getElementById("sideBar").style.left = "200px";
+    </script>
+    
 </body>
+
 </html>
