@@ -3,11 +3,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
-    <link rel="stylesheet" href="/app/styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="/app/styles/browse.css">
+    <link rel="stylesheet" href="../styles/browse.css">
     
 </head>
     
@@ -17,7 +17,7 @@
     <nav class="navBar">
         <span class="ion-navicon"></span>
         
-        <a href="index.html" class="logo"><img src="/app/assets/images/logoWG.png" ></a>
+        <a href="index.html" class="logo"><img src="../assets/images/logoWG.png" ></a>
             
         <span class="ion-ios-cart"></span>
         <a href="signIn.html" class="signIn">SignIn</a>
@@ -46,7 +46,7 @@
     
     </section>
     
-    <section class="content">
+    <section class="content page-wrap">
         <div class="contentNav">
             <ul><h7>Sort</h7>
                 <li>Newest</li>
@@ -94,7 +94,14 @@
     
     </section>
     
-    <footer></footer>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html"><img src="../assets/images/logoBG.png"></a></li>
+            <li><a href="shop.html">Privacy Policy</a></li>
+            <li><a href="about.html">Support</a></li>
+            <li><a href="contact.html">Terms and Conditions</a></li>
+        </ul>
+    </footer>
         
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script >
@@ -109,11 +116,16 @@
                 sideBarToggle = 0;
             }
         }
+        var sideBarSlide2 = function(){
+            if(sideBarToggle === 1){
+                $('#sideBar').css('left','00px');
+                sideBarToggle = 0;
+            }
+        }
         $(document).ready(function(){
             $('.ion-navicon').click(sideBarSlide);
+            $('.body').click(sideBarSlide2);
         });
-        //$('#sideBar').css('display','none');
-        //document.getElementById("sideBar").style.left = "200px";
     </script>
     
 </body>

@@ -1,4 +1,13 @@
-
+html,body{
+    height:100%;
+}
+.page-wrap {
+  min-height: 100%;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
 /*---------- Nav Bar -----------*/
 
 .navBar {
@@ -58,6 +67,7 @@ nav .signIn:hover{
     -webkit-transition: left 1s;
     transition: left 1s;
     left:-200px;
+    z-index: 1;
 }
 .sideBar a{
     color:black;
@@ -68,10 +78,14 @@ nav .signIn:hover{
     position:relative;
     -webkit-transition: background .25s;
     transition: background .25s;
+    z-index: 1;
 }
 .sideBar li:hover{
     right:10px;
     background-color:rgba(0,0,0,.03);
+}
+.sideBar li:hover + div{
+    poi
 }
 
 .sideBar > ul{
@@ -114,16 +128,16 @@ nav .signIn:hover{
 }
 
 .design1{
-    background-image: url(/app/assets/designs/020712_KREBSone_t670.jpg);
+    background-image: url(../assets/designs/020712_KREBSone_t670.jpg);
 }
 .design2{
-    background-image: url(/app/assets/designs/03aed24e392d60c0ad4ef4a7807e39c1.jpg)
+    background-image: url(../assets/designs/03aed24e392d60c0ad4ef4a7807e39c1.jpg)
 }
 .design3{
-    background-image: url(/app/assets/designs/8fe3c43dbae9a7d18e2181961f7fc171.jpg)
+    background-image: url(../assets/designs/8fe3c43dbae9a7d18e2181961f7fc171.jpg)
 }
 .design4{
-    background-image: url(/app/assets/designs/a725201b9a731d1f4dc0098754eb2f95.jpg)
+    background-image: url(../assets/designs/a725201b9a731d1f4dc0098754eb2f95.jpg)
 }
 .designs{
     background-repeat: no-repeat;
@@ -144,7 +158,7 @@ nav .signIn:hover{
     opacity:0;
     transition:all .25s;
 }
-.designs div:hover{
+.designs > div:hover{
     opacity:1;
 }
 .designs h7{
@@ -183,9 +197,26 @@ designName{
     box-shadow: 3px 3px 3px rgba(0,0,0,.3);
 }
 
+/*-------------- Footer -----------------*/
 
 footer{
-    display:none;
-    position:absolute;
-    top:100%;
+    height:60px;
+    text-align: center;
+    position: relative;
+    color:black;
+    margin:0;
+    padding:0;
+}
+footer img{
+    height: 40px;
+    position: relative;
+}
+footer li{
+    display:inline-block;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+footer a{
+    
+    color:black;
 }
