@@ -1,13 +1,4 @@
-html,body{
-    height:100%;
-}
-.page-wrap {
-  min-height: 100%;
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
+
 /*---------- Nav Bar -----------*/
 
 .navBar {
@@ -45,6 +36,9 @@ nav .ion-navicon{
     margin:10px 20px;
     
 }
+nav .ion-navicon:active{
+    color:gray;
+}
 
 nav .ion-ios-cart{
     float:right;
@@ -59,47 +53,7 @@ nav .signIn:hover{
     color: rgba(0,0,0,.8)
 }
 
-/*------------ Side Bar -----------*/
-.sideBar{
-    background-color:white;
-    width:200px;
-    position:absolute;
-    -webkit-transition: left 1s;
-    transition: left 1s;
-    left:-200px;
-    z-index: 1;
-}
-.sideBar a{
-    color:black;
-}
-.sideBar li{
-    list-style: none;
-    padding:10px 30px ;
-    position:relative;
-    -webkit-transition: background .25s;
-    transition: background .25s;
-    z-index: 1;
-}
-.sideBar li:hover{
-    right:10px;
-    background-color:rgba(0,0,0,.03);
-}
-.sideBar li:hover + div{
-    poi
-}
 
-.sideBar > ul{
-    padding:25px 0;
-    margin:0;
-}
-.sideBar ul ul{
-    text-align: right;
-    padding: 20px 0;
-}
-.sideBar h7{
-    font-weight:500;
-    padding:0 30px 10px;
-}
 
 /*---------------- Content ---------------*/
 .content{
@@ -150,7 +104,7 @@ nav .signIn:hover{
     margin:20px 20px;
 }
 .designs div{
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,.7);
     width:80%;
     height:100%;
     margin:0%;
@@ -184,17 +138,17 @@ designName{
     font-style: italic;
 }
 .designButton{
-    font-size:1.5em;
+    font-size:1em;
     font-weight:500;
     padding:5px 5px;
     margin:0 40px;
     background-color: #f7a537;
     color:white;
     border-radius: 5px;
+    z-index: 10;
 }
-.designButton:hover{
-    cursor:pointer;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+.content a{
+    color:black;
 }
 
 /*-------------- Footer -----------------*/

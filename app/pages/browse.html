@@ -55,42 +55,48 @@
                 <li>Lowest Price</li>
             </ul>
         </div>
-        <div class="design1 designs">
-            <div>
-                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
-                <h7 class="designName">Square One</h7>
-                <h7 class="designer">Anonymous</h7>
-                <h6 class="designButton">VIEW</h6>
-            </div>
-        </div>
         
-        <div class="design2 designs">
-            <div>
-                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
-                <h7 class="designName">Square One</h7>
-                <h7 class="designer">Anonymous</h7>
-                <h6 class="designButton">VIEW</h6>
+        <a href="details.html">
+            <div class="design1 designs">
+                <div>
+                    <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                    <h7 class="designName">Square One</h7>
+                    <h7 class="designer">Anonymous</h7>
+                    <h6 class="designButton">QUICK VIEW</h6>
+                </div>
             </div>
-        </div>
-        
-        <div class="design3 designs">
-            <div>
-                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
-                <h7 class="designName">Square One</h7>
-                <h7 class="designer">Anonymous</h7>
-                <h6 class="designButton">VIEW</h6>
+        </a>
+        <a href="details.html">
+            <div class="design2 designs">
+                <div>
+                    <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                    <h7 class="designName">Square One</h7>
+                    <h7 class="designer">Anonymous</h7>
+                    <h6 class="designButton">QUICK VIEW</h6>
+                </div>
             </div>
-        </div>
-        
-        <div class="design4 designs">
-            <div>
-                <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
-                <h7 class="designName">Square One</h7>
-                <h7 class="designer">Anonymous</h7>
-                <h6 class="designButton">VIEW</h6>
+        </a>
+        <a href="details.html">
+            <div class="design3 designs">
+                <div>
+                    <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                    <h7 class="designName">Square One</h7>
+                    <h7 class="designer">Anonymous</h7>
+                    <h6 class="designButton">QUICK VIEW</h6>
+                </div>
             </div>
-        </div>
-    
+        </a>
+            
+        <a href="details.html">
+            <div class="design4 designs">
+                <div>
+                    <h7 class="wishList "><span class="ion-ios-heart-outline"></span> ADD TO WISHLIST</h7>
+                    <h7 class="designName">Square One</h7>
+                    <h7 class="designer">Anonymous</h7>
+                    <h6 class="designButton">QUICK VIEW</h6>
+                </div>
+            </div>
+        </a>
     
     </section>
     
@@ -104,29 +110,7 @@
     </footer>
         
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script >
-        var sideBarToggle = 0;
-        var sideBarSlide = function(){
-            if(sideBarToggle === 0){
-                $('#sideBar').css('left','00px');
-                sideBarToggle = 1;
-            }
-            else{
-                $('#sideBar').css('left','-200px');
-                sideBarToggle = 0;
-            }
-        }
-        var sideBarSlide2 = function(){
-            if(sideBarToggle === 1){
-                $('#sideBar').css('left','00px');
-                sideBarToggle = 0;
-            }
-        }
-        $(document).ready(function(){
-            $('.ion-navicon').click(sideBarSlide);
-            $('.body').click(sideBarSlide2);
-        });
-    </script>
+    <script src="../scripts/sideBar.js"></script>
     
 </body>
 
