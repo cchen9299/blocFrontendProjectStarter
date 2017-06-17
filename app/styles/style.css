@@ -66,16 +66,58 @@ html,body{
     height:3.5em;
     z-index: 1;
 }
+.ion-ios-cart:hover{
+    cursor:pointer;
+    color:black;
+    transform:1s
+}
+.numberItems{
+    margin:0;
+    padding:0;
+    float:right;
+    font-size:.4em;
+    color:white;
+    height:22px;
+    width:22px;
+    border-radius: 25px;
+    background-color:#f7a537;
+    font-weight:500;
+    position:relative;
+    top:20px;
+    right:5px;
+    display:none
+}
+.cartPanel{
+    width:100px;
+    height:100px;
+    float:right;
+    clear:both;
+}
+.item{
+    width:350px;
+    position:relative;
+    right:250px;
+    
+}
+.item img{
+    float:left;
+}
+.leftColumn{
+    display:block;
+    text-align: left;
+    margin:
+}
 
 /*------------ Side Bar -----------*/
 .sideBar{
     background-color:white;
     width:200px;
-    position:absolute;
+    position:fixed;
     -webkit-transition: left 1s;
     transition: left 1s;
     left:-200px;
     z-index: 1;
+    box-shadow: 0 0 5px;
 }
 .sideBar a{
     color:black;
@@ -91,9 +133,6 @@ html,body{
 .sideBar li:hover{
     right:10px;
     background-color:rgba(0,0,0,.03);
-}
-.sideBar li:hover + div{
-    poi
 }
 
 .sideBar > ul{

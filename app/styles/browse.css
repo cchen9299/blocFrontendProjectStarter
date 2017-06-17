@@ -6,6 +6,7 @@
     margin:0;
     padding:0;
     height:4em;
+    position:fixed;
 }
 
 nav logo{
@@ -53,7 +54,9 @@ nav .signIn:hover{
     color: rgba(0,0,0,.8)
 }
 
-
+.sideBar{
+    top:4em;
+}
 
 /*---------------- Content ---------------*/
 .content{

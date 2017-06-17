@@ -1,5 +1,6 @@
 /*----------- Side Bar ------------*/
 var sideBarToggle = 0;
+var clickToggle = 0;
 var sideBarSlide = function(){
     if(sideBarToggle === 0){
         $('#sideBar').css('left','00px');
@@ -11,12 +12,9 @@ var sideBarSlide = function(){
     }
 }
 var sideBarSlide2 = function(){
-    if(sideBarToggle === 1){
-        $('#sideBar').css('left','00px');
-        sideBarToggle = 0;
-    }
+    //$('#sideBar').css('left','-200px');
 }
 $(document).ready(function(){
     $('.ion-navicon').click(sideBarSlide);
-    $('.body').click(sideBarSlide2);
+    $(document.body).click(sideBarSlide2);
 });

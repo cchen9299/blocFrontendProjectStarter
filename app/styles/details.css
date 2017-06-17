@@ -13,7 +13,7 @@ margin:0
     margin:0;
     padding:0;
     height:4em;
-    position:absolute;
+    position:fixed;
 }
 nav .logo img{
     height:3em;
@@ -25,12 +25,6 @@ nav .logo img{
 nav span{
     font-size: 40px;
     color:white;
-}
-
-nav span:hover{
-    cursor:pointer;
-    color:black;
-    transform:1s
 }
 
 nav .ion-navicon{
@@ -155,7 +149,7 @@ div > select{
 /*----------- Reviews -------------*/
 .reviews{
     clear:both;
-    padding:30px 0;
+    padding:30px 0 0;
     margin: 0 10%;
 }
 .divideLine{
@@ -246,10 +240,159 @@ div > select{
     color:#f7a537;
 }
 /*--- Review Boxes---*/
-.reviewBox{
-    width:100%;
-    height:200px;
+.reviewBoxes{
+    width:60%;
+    margin:auto;
 }
-.reviewBox h3{
+.boxes{
+    padding:20px 7% 40px;
+    box-shadow: 3px 3px 15px gray;
+    margin: 0 0 30px;
+}
+.boxes h5{
+    font-weight:500;
+}
+.boxes h7{
+    margin: 0 5px;
+}
+.reviewDate, .reviewName{
+    color:grey;
+}
+.stars{
+    color:#f7a537;
+    font-size:1.25em;
+}
+.userReport{
+    padding:20px 0 0;
+    color:#f7a537;
+}
+.reviewBoxes .icon{
+    cursor:pointer;
+}
+.reviewBoxes .icon:hover{
+    opacity:.5;
+}
+.helpfullness{
+    padding: 0 20px 0 0;
+}
+.ion-ios-minus{
+    padding: 0 20px
+}
+.oneStar, .twoStar, .threeStar, .fourStar,.fiveStar{
+    display:none;
+}
+
+/*--------------- Write a Review ----------------*/
+.writeReview{
+    width:80%;
+    margin:auto;
+}
+.expand:hover{
+    opacity:.5
+}
+.expand{
+    color:#f7a537;
+    cursor:pointer;
+    float:right;
+}
+.expnad:hover{
+    opacity:.5;
+}
+.writingBoxes{
+    width:100%;
+    margin:20px auto;
+    padding:20px 0;
+    display:none;
+}
+.writingBoxes input{
+    float:left;
+    clear:both;
+    margin: 30px 0 0;
+    font-size: 15px;
+}
+.writerName, .writeHeading{
+    width:40%;
+    padding: 10px 10px 10px;
+}
+.writeComment{
+    clear:both;
+    width:100%;
+    height:300px;
+    vertical-align: middle;
+    margin:30px 0;
+}
+.writeReview h5{
+    clear:both;
+    float:right;
+    padding:15px 10%;
+    margin:0;
+}
+hr{
+    clear:both;
+}
+.rateCircle{
+    clear:both;
+    float:left;
+    display:inline-block;
+    padding: 0 0 0  0;
+    min-width:460px;
+    width:40%;
+    margin: 30px 0 0 0px;
+}
+.circle{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    border: .5px solid #f7a537;
+    float:left;
+    margin: 0 5% 0 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'lato';
+    color:white;
+}
+.circle h5{
+    padding:10px 0 0 0;
+    margin:0;
+    float:none;
+}
+.circle:hover{
+    background-color: #f7a537;
+    cursor:pointer
+}
+.circle:active{
+    background-color:#f9c073;
+}
+.filled{
+    background-color:#f7a537;
+}
+.clickToggle{
     
+}
+
+/*----------------- Footer -----------------*/
+
+footer{
+    height:60px;
+    text-align: center;
+    position: relative;
+    color:black;
+    margin:100px 0 0;
+    padding:0;
+}
+footer img{
+    height: 40px;
+    position: relative;
+}
+footer li{
+    display:inline-block;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+footer a{
+    
+    color:black;
+}
+.writingBoxes{
+    clear:both;
 }

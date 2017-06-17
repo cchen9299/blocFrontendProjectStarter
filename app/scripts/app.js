@@ -1,29 +1,14 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+var itemCount = 0;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+var updateItemNumber = function(){
+    itemCount ++;
+    if(itemCount >= 1){
+        $('.numberItems').replaceWith("<h6 class='numberItems'>" + itemCount + "</h6>")
+        $('.numberItems').css('display','inherit');
+    }
 }
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  console.log(x.length);
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" whiteDot", " ");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " whiteDot";
-}
-
-
+$(document).ready(function(){
+    $('.toCartButton').click(updateItemNumber);
+    $('.ion-ios-cart').click(cartDropIt);
+});
